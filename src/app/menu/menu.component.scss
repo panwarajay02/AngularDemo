@@ -1,0 +1,51 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.container2{
+    width: auto;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container3{
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: auto;
+    text-align: center;
+    display: flex;
+}
+.nameClass{
+    height: auto;
+    width: auto;
+    text-align: center;
+    display: flex;
+}
+.imgClass{
+    height: auto;
+    max-width: 150px;
+    text-align: center;
+    display: flex;
+}
+.mat-elevation-z4{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size:3em;
+    max-width:500px;
+    font-family: cursive;
+    background-color: rgba(162, 0, 255, 0.473);
+}
+.logoClass{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:auto;
+    font-family: cursive;
+    background-color: rgba(162, 0, 255, 0.473);
+}
