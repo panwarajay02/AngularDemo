@@ -13,13 +13,17 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { CardComponent } from './card/card.component';
+import { HeadComponent } from './head/head.component';
+import { FootComponent } from './foot/foot.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    CardComponent
+    CardComponent,
+    HeadComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule,
