@@ -1,21 +1,12 @@
-<div class="container"
-     fxLayout="column"
-     fxLayoutGap="10px">
-
-  <div>
-      <img class="logoClass" src="assets/images/logo.jpg" >
-      <h3 class="mat-elevation-z4">INFO COLLECT</h3>
-  </div>
-
-  <div>
-    <mat-grid-list  cols="4" rowHeight="150px">
+    <mat-grid-list  cols="4" rowHeight="245px" style="margin-top: 20px">
       <mat-grid-tile class="container2" *ngFor="let dish of dishes">
-        <img src={{dish.image}} class="imgClass" alt={{dish.name}}>
+        <div style="align-items: center">
+            <img src={{dish.image}} class="imgClass" alt={{dish.name}}>
+            <img src={{dish.avatar}} class="imgClass2" alt={{dish.name}}>
+            <p class="imgClass2">{{dish.rating}}</p>
+        </div>
         <mat-grid-tile-footer class="container3">
-          <h4 mat-line>{{dish.name | uppercase}}</h4>
-        </mat-grid-tile-footer>
+            <h4>{{dish.name | uppercase}}</h4>
+        </mat-grid-tile-footer>  
       </mat-grid-tile>
     </mat-grid-list>
-  </div>
-
-</div>

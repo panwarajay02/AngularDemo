@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Dish } from '../shared/dish';
+import { Person } from '../shared/dish';
 
 
 @Component({
@@ -10,46 +10,62 @@ import { Dish } from '../shared/dish';
 })
 export class MenuComponent implements OnInit {
 
-  dishes : Dish[] = [
+  dishes : Person[] = [
     {
       name:"ajay singh",
-      price : 232,
-      image: "/assets/images/img1.jpg"
+      age : 23,
+      image: "/assets/images/img1.jpg",
+      avatar: "/assets/images/avt1.jpg",
+      rating:3.5
     },
     {
       name:"vijay samanth",
-      price : 231,
-      image: '/assets/images/img3.jpg'
+      age : 21,
+      image: '/assets/images/img3.jpg',
+      avatar: "/assets/images/avt3.jpg",
+      rating:3.5
     },
     {
       name:"manjy nath",
-      price : 239,
-      image: '/assets/images/img2.jpg'
+      age : 29,
+      image: '/assets/images/img2.jpg',
+      avatar: "/assets/images/avt2.jpg",
+      rating:3.5
     },   
     {
-      name:"Sanjay gupta",
-      price : 222,
-      image: "/assets/images/img4.jpg"
+      name:"Sanjeet gupta",
+      age : 22,
+      image: "/assets/images/img4.jpg",
+      avatar: "/assets/images/avt4.jpg",
+      rating:3.5
     },   
     {
       name:"Manjeet Singh",
-      price : 210,
-      image: "/assets/images/img5.jpg"
+      age : 20,
+      image: "/assets/images/img5.jpg",
+      avatar: "/assets/images/avt5.jpg",
+      rating:3.5
     },   
     {
       name:"Ranjeet chaudhary",
-      price : 218,
-      image: "/assets/images/img6.jpg"
+      age : 28,
+      image: "/assets/images/img6.jpg",
+      avatar: "/assets/images/avt6.jpg",
+      rating:3.5
     },   
     {
       name:"Kumar vishal",
-      price : 227,
-      image: "/assets/images/img8.jpg"
+      age : 27,
+      image: "/assets/images/img8.jpg",
+      avatar: "/assets/images/avt8.jpg",
+      rating:3.5
     },   
     {
       name:"Jeet Sulan",
-      price : 198,
-      image: "/assets/images/img7.jpg"
+      age : 18,
+      image: "/assets/images/img7.jpg",
+      avatar: "/assets/images/avt7.jpg",
+      rating:3.5
     }
 ];
 

@@ -11,15 +11,25 @@ import 'hammerjs';
 
 
 import { AppComponent } from './app.component';
+import { TabComponent } from './tab/tab.component';
 import { MenuComponent } from './menu/menu.component';
 import { CardComponent } from './card/card.component';
+import { HeadComponent } from './head/head.component';
+import { FootComponent } from './foot/foot.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    CardComponent
+    CardComponent,
+    HeadComponent,
+    FootComponent,
+    LoginComponent,
+    TabComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

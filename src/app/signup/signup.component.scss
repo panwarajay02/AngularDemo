@@ -1,0 +1,39 @@
+.loginLogoClass{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.container{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size:1em;
+    max-width:500px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 20px;
+    font-family: cursive;
+}
+
+.loginContainer{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size:1em;
+    max-width:240px;
+    height: 300px;
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: cursive;
+    background-color: rgba(247, 15, 123, 0.932);
+}
+.imgClass{
+    height: 100px;
+    width:100px;
+}
+.spaceClass{
+    margin-top: 18px;
+}

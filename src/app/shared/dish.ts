@@ -1,5 +1,7 @@
-export class Dish {
+export class Person {
     name : string;
-    price : number;
+    age : number;
     image: string;
+    avatar:string;
+    rating:number;
  }
