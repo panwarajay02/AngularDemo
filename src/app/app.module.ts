@@ -18,6 +18,7 @@ import { HeadComponent } from './head/head.component';
 import { FootComponent } from './foot/foot.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { InputFormComponent } from './input-form/input-form.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SignupComponent } from './signup/signup.component';
     FootComponent,
     LoginComponent,
     TabComponent,
-    SignupComponent
+    SignupComponent,
+    InputFormComponent
   ],
   imports: [
     BrowserModule,
