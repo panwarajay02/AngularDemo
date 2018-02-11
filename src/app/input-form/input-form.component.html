@@ -1,17 +1,70 @@
-<mat-card class="example-container">  
-  <div class="example-container2">  
-    Address Form
-  </div>
-<div layout layout-sm="column">
+<div class="example-container" style="min-height: 460px;padding-left: 20px;padding-right: 20px">  
+
+<div>
+    <div>
+        <mat-input-container>
+            <input type="tel" matInput placeholder="Phone no." spellcheck="false">
+        </mat-input-container>  
+    </div>  
+                                                      
+    <div>
+        <mat-input-container>
+            <input type="tel" matInput placeholder="Email Id" spellcheck="false">
+        </mat-input-container>  
+    </div>              
+    <div>
+        <mat-input-container>
+            <input type="text" matInput placeholder="User name" spellcheck="false">    
+        </mat-input-container>
+    </div>
+
+</div> 
+  
+<div> 
+        <mat-input-container>
+            <input type="text" matInput placeholder="First name" style="margin-left: 20px" spellcheck="false">    
+        </mat-input-container>
+        <mat-input-container>
+            <input matInput placeholder="Last name" spellcheck="false">
+        </mat-input-container>
+</div>
+
+<div>
 <mat-input-container>
-  <input matInput placeholder="Input">    
-</mat-input-container>
+    <input type="number" matInput placeholder="Age" spellcheck="false">
+</mat-input-container>  
 
 <mat-input-container>
-  <input matInput placeholder="Textarea">
-</mat-input-container>
-</div>
+    <input type="text" matInput placeholder="Nationality" spellcheck="false">
+</mat-input-container>  
+
 <mat-form-field>
-  <input matInput placeholder="Textarea">
+    <input matInput [matDatepicker]="picker" placeholder="Date of birth" spellcheck="false">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>
-</mat-card>
+</div>
+
+<div style="margin-top: 1px;margin-bottom: 25px; font-family:cursive  ">
+    <h4>Gender : </h4>
+  <mat-radio-group>
+    <mat-radio-button value="1">Male</mat-radio-button>
+    <mat-radio-button value="2">Female</mat-radio-button>
+  </mat-radio-group>
+</div>
+
+<mat-form-field>
+    <input matInput placeholder="Complete permanent address (optional)" spellcheck="false">
+</mat-form-field>
+
+<mat-form-field>
+    <input matInput placeholder="Complete current address (optional)" spellcheck="false">
+</mat-form-field>
+
+<div style="margin-top: 15px;margin-bottom: 15px;">
+        <button mat-button style="background-color: rgb(239, 243, 14)">Submit</button>
+        <button mat-button style="background-color: rgb(239, 243, 14)">Cancel</button>
+        <button mat-button style="background-color: rgb(239, 243, 14); align-items: right">Reset</button>
+</div>
+
+</div>  

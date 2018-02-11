@@ -1,0 +1,43 @@
+<div style="margin-top: 50px">
+    <app-side-menu></app-side-menu>
+    <div style="display: block; margin-top: 80px;padding-left: 20px;">
+    <div style="display: inline">  
+        <div style="height: 300px;width: 345px">
+        <canvas baseChart
+                      [data]="doughnutChartData"
+                      [labels]="doughnutChartLabels"
+                      [chartType]="doughnutChartType"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)">
+        </canvas>
+            <div>
+                <h4 style="height:40px;padding-top: 15px; text-align: center;font-family: cursive;color: rgb(255, 255, 255);background-color: rgba(82, 74, 74, 0.692)">Your evaluation creiteria chart!</h4>
+            </div>  
+        </div>
+        <div style="height: 300px;width: 345px">
+        <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+        <div>
+            <h4 style="height:40px;padding-top: 15px; text-align: center;font-family: cursive;color: rgb(255, 255, 255);background-color: rgba(82, 74, 74, 0.692)">Your performance chart!</h4>
+        </div>  
+        </div>
+        <div style="height: 300px;width: 345px">
+              <canvas baseChart
+                      [data]="pieChartData"
+                      [labels]="pieChartLabels"
+                      [chartType]="pieChartType"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)">
+              </canvas>
+              <div>
+                  <h4 style="height:40px;padding-top: 15px; text-align: center;font-family: cursive;color: rgb(255, 255, 255);background-color: rgba(82, 74, 74, 0.692)">Your activity chart!</h4>
+              </div>  
+        </div>
+    </div>
+  </div>

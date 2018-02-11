@@ -1,15 +1,23 @@
 <mat-card class="container">
-  <h1 class="loginLogoCLass">Login Here!</h1>
+  <h1 routerLink="/dashboard" routerLinkActive="active" class="loginLogoCLass">Login Here!</h1>
   <img class="imgClass" src="assets/images/baseavt.jpg">
   <mat-card class="loginContainer">
+  <form novalidate (ngSubmit)="onSubmit()">
     <div class="spaceClass">
-      <a>Email Id  : </a><input type="email" spellcheck="false">
+      <a>Email Id  : </a><input type="email" [(ngModel)]="user.email" name="email" required spellcheck="false">
     </div>      
     <div class="spaceClass">
-      <a>Password : </a><input type="password" spellcheck="false">
+        <a>Password : </a><input type="password" [(ngModel)]="user.passsword" name="password" required spellcheck="false">
+      </div>
+    <div>
+        <a class="forgotClass"><u>Forgot passsword</u></a>
     </div>
     <div class="spaceClass">
-      <button mat-button>Login</button>
+      <button type="submit" mat-button style="background-color: rgba(255, 68, 0, 0.774)">Login</button>
+    </div>
+    </form>
+    <div style="margin-top: 3px;">
+        <a class="termsClass"><u>Terms and Policies</u></a>
     </div>
   </mat-card>
 </mat-card>

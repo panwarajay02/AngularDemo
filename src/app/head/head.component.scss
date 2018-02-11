@@ -4,23 +4,29 @@
     display: flex;
 }
 .logoClass{
-    width: 180px;
-    height:160px;
+    width: 185px;
+    height:165px;
     margin-top: 30px;
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     font-family: cursive;
+    border: hidden;
 }
 .imgiconClass{
-    padding-top: 160px;
     margin-top: 5rem;
     max-height: 3rem;
     max-width: 4rem;
     min-width: 0.8rem;
     min-height: 0.8rem;
     margin: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: hidden;
+}
+.paddingClass{
+    padding-top: 160px;
 }
 .mat-elevation-z4{
     display: block;

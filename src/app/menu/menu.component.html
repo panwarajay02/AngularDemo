@@ -1,8 +1,8 @@
     <mat-grid-list  cols="4" rowHeight="245px" style="margin-top: 20px">
       <mat-grid-tile class="container2" *ngFor="let dish of dishes">
         <div style="align-items: center">
-            <img src={{dish.image}} class="imgClass" alt={{dish.name}}>
-            <img src={{dish.avatar}} class="imgClass2" alt={{dish.name}}>
+            <img src={{dish.image}} class="imgClass" alt={{dish.name}} >
+            <img src={{dish.avatar.pic}} class="imgClass2" alt={{dish.name}} (click)="openDialog(dish)">
             <p class="imgClass2">{{dish.rating}}</p>
         </div>
         <mat-grid-tile-footer class="container3">

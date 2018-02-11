@@ -9,7 +9,13 @@ export class SignupComponent implements OnInit {
 
   constructor() { }
 
+  user = {};
+
   ngOnInit() {
+  }
+
+  onSubmit() {
+    console.log("Signup user :- ",this.user);
   }
 
 }
