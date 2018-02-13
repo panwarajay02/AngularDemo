@@ -2,28 +2,35 @@
   <h1 class="loginLogoCLass">Signup Here!</h1>
   <img class="imgClass" src="assets/images/baseavt2.jpg">
   <mat-card class="loginContainer">
-    <form novalidate (ngSubmit)="onSubmit()">
-    <div class="spaceClass">
-      <a>Username  : </a><input type="text" [(ngModel)]="user.name" name="name" spellcheck="false" required>
-    </div>      
-    <div class="spaceClass">
-      <a>Email Id  : </a><input type="email" [(ngModel)]="user.email" name="email" spellcheck="false" required>
-    </div>      
-    <div class="spaceClass">
-      <a>Password : </a><input type="password" [(ngModel)]="user.password" name="password" spellcheck="false" required>
-    </div>
-    <div class="spaceClass">
-      <a>Confirm Password : </a><input type="password" [(ngModel)]="user.confpass" name="confpass" spellcheck="false" required>
-    </div>
-    <div class="spaceClass">
-      <button type="submit" mat-button style="background-color: rgba(255, 68, 0, 0.774)">Signup</button>
-    </div>
+    <form [formGroup]="signupForm" novalidate>
+      <div class="spaceClass">
+        <a>Username : </a>
+        <input class="form-control" formControlName="name" required>
+      </div>
+      <div class="spaceClass">
+        <a>Email Id : </a>
+        <input class="form-control" formControlName="email" required>
+      </div>
+      <div class="spaceClass">
+        <a>Password : </a>
+        <input class="form-control" formControlName="password" required>
+      </div>
+      <div class="spaceClass">
+        <a>Confirm Password : </a>
+        <input class="form-control" formControlName="confpass" required>
+      </div>
+      <div class="spaceClass">
+        <button type="submit" [disabled]="!form.valid" mat-button style="background-color: rgba(255, 68, 0, 0.774)">Signup</button>
+      </div>
     </form>
     <div style="margin-top: 3px;">
       <mat-checkbox>
       </mat-checkbox>
-        <a><u class="termsClass">Terms and Policies</u> <a style="font-size: 11px;">accepted</a></a>
+      <a>
+        <u class="termsClass">Terms and Policies</u>
+        <a style="font-size: 11px;">accepted</a>
+      </a>
     </div>
- 
   </mat-card>
 </mat-card>
+{{ signupForm.value | json }}

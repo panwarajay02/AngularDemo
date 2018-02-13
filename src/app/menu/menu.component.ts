@@ -5,6 +5,7 @@ import { PersonMenuService } from '../service/person-menu.service';
 import { MatDialog } from '@angular/material';
 import { ModalAvatarComponent } from '../modal-avatar/modal-avatar.component';
 import { inherits } from 'util';
+import { error } from 'selenium-webdriver';
 
 
 @Component({
@@ -14,15 +15,19 @@ import { inherits } from 'util';
 })
 export class MenuComponent implements OnInit {
 
-  personService: PersonMenuService;
   dishes: Person[];
 
-  constructor(personService: PersonMenuService, public dialog: MatDialog) {
+  constructor(private personService: PersonMenuService, public dialog: MatDialog) {
     this.personService = personService;
   }
 
   ngOnInit() {
-     this.dishes = this.personService.getPeopleWithPublicAccess();
+    this.personService.getHeroes().subscribe(person=>this.dishes=person);
+  }
+
+  handleError(){
+    console.log("Error in menu service");
+    return null;
   }
 
   openDialog(dish: Person): void {
