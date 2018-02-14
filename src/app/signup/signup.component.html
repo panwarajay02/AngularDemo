@@ -4,33 +4,37 @@
   <mat-card class="loginContainer">
     <form [formGroup]="signupForm" novalidate>
       <div class="spaceClass">
-        <a>Username : </a>
-        <input class="form-control" formControlName="name" required>
+        <mat-input-container>
+          <input matInput class="form-control" formControlName="name" placeholder="Username" required>
+        </mat-input-container>
+      </div>
+      <div>
+        <mat-input-container>
+          <input matInput class="form-control" formControlName="email" placeholder="Email id" required>
+        </mat-input-container>
+      </div>
+      <div>
+        <mat-input-container>
+          <input matInput class="form-control" formControlName="password" type="password" placeholder="Password" required>
+        </mat-input-container>
+      </div>
+      <div>
+        <mat-input-container>
+          <input matInput class="form-control" formControlName="confpass" type="password" placeholder="Confirm Password" required>
+        </mat-input-container>
       </div>
       <div class="spaceClass">
-        <a>Email Id : </a>
-        <input class="form-control" formControlName="email" required>
+        <button type="submit" [disabled]="!signupForm.valid" mat-button style="background-color: rgba(255, 68, 0, 0.774)">Signup</button>
       </div>
-      <div class="spaceClass">
-        <a>Password : </a>
-        <input class="form-control" formControlName="password" required>
-      </div>
-      <div class="spaceClass">
-        <a>Confirm Password : </a>
-        <input class="form-control" formControlName="confpass" required>
-      </div>
-      <div class="spaceClass">
-        <button type="submit" [disabled]="!form.valid" mat-button style="background-color: rgba(255, 68, 0, 0.774)">Signup</button>
+      <div style="margin-top: 8px;">
+        <mat-checkbox class="form-control" formControlName="accepted" required>
+        </mat-checkbox>
+        <a>
+          <u class="termsClass">Terms and Policies</u>
+          <a style="font-size: 11px;">accepted</a>
+        </a>
       </div>
     </form>
-    <div style="margin-top: 3px;">
-      <mat-checkbox>
-      </mat-checkbox>
-      <a>
-        <u class="termsClass">Terms and Policies</u>
-        <a style="font-size: 11px;">accepted</a>
-      </a>
-    </div>
   </mat-card>
 </mat-card>
-{{ signupForm.value | json }}
+<!-- {{ signupForm.value | json }} -->
