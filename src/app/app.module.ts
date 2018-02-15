@@ -29,6 +29,8 @@ import { ModalAvatarComponent } from './modal-avatar/modal-avatar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { Profile } from 'selenium-webdriver/firefox';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TestFormComponent } from './test-form/test-form.component';
+import { PopupComponent } from './popup/popup.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -39,6 +41,8 @@ const appRoutes: Routes = [
   { path: 'card', component: CardComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'testform', component: TestFormComponent },
+  { path: 'popup', component: PopupComponent },//temporary
   { path: '', pathMatch: 'full' , redirectTo: 'menu'},
   { path: '**', component: ErrorPageComponent}
 ];
@@ -58,7 +62,9 @@ const appRoutes: Routes = [
     SideMenuComponent,
     ModalAvatarComponent,
     ProfileComponent,
-    DashboardComponent
+    DashboardComponent,
+    TestFormComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +79,7 @@ const appRoutes: Routes = [
   ],
   providers: [PersonMenuService],
   entryComponents: [
-    ModalAvatarComponent,
+    ModalAvatarComponent, PopupComponent, TestFormComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -3,7 +3,7 @@ export class Person {
     name: string;
     age: number;
     image: string;
-    avatar: Object;
+    avatar: Avatar;
     rating: number;
     access: boolean;
  }

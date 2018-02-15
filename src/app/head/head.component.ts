@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TestFormComponent } from '../test-form/test-form.component';
+import { MatDialog } from '@angular/material';
+import { devModeEqual } from '@angular/core/src/change_detection/change_detection_util';
 
 @Component({
   selector: 'app-head',
@@ -7,7 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
+
+  openTest(): void {
+    const dialogRef = this.dialog.open(TestFormComponent, {
+      width: '650px',
+      height: '600px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
 
   ngOnInit() {
   }

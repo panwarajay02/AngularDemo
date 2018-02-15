@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
 
   dishes: Person[];
 
-  constructor(private personService: PersonMenuService, public dialog: MatDialog) {
+  constructor(private personService: PersonMenuService, private dialog: MatDialog) {
     this.personService = personService;
   }
 

@@ -34,4 +34,10 @@ export class DashboardComponent implements OnInit {
   public pieChartData: number[] = [30, 50, 10];
   public pieChartType = 'pie';
 
+  chartHovered(evt){
+    
+  }
+  chartClicked(evt){
+    
+  }
 }

@@ -1,0 +1,40 @@
+<mat-card style="margin-top: 40px;padding:2%">
+  <div style="height: 30px;width: 50px">
+    <img class="crossClass" src="assets/images/cross.jpg" (click)="onClosing()">
+  </div>
+  <div style="padding: 3%">
+    <h1>What is full form of OOPs?</h1>
+    <h4>Select one:-</h4>
+    <mat-radio-group>
+      <div>
+        <mat-radio-button value="a">
+          <div>Object Oriented Programming</div>
+        </mat-radio-button>
+      </div>
+      <div>
+        <mat-radio-button value="b">
+            <div>Oriental Object Programming</div>
+        </mat-radio-button>
+      </div>
+      <div>
+        <mat-radio-button value="c">
+            <div>Object Obsessed Programming</div>
+        </mat-radio-button>
+      </div>
+      <div>
+        <mat-radio-button value="d">
+          <div>Only Object Programming</div>
+        </mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <button mat-button style="margin-top: 20px;background-color: rgba(255, 1, 1, 0.932)">
+      Reset
+    </button>
+    <button mat-button style="margin-top: 20px;background-color: rgba(255, 97, 6, 0.945)">
+      Previous
+    </button>
+    <button mat-button style="margin-top: 20px;background-color: rgba(23, 250, 34, 0.945)">
+      Next
+    </button>
+  </div>
+</mat-card>
